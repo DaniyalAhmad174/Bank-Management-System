@@ -53,7 +53,3 @@ This project is a simple implementation of a banking system in C++ that supports
 6. **Displaying VIP Accounts**:  
    The system can display accounts classified as VIP (with a balance greater than a threshold).
 
-**Compile and Run Instructions**
-
-1. **Compile the Program**:  
-   Use the following command to compile the program:
