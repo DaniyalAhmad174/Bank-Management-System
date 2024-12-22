@@ -762,7 +762,7 @@ int main()
                 cout << "\nThank you for using our banking system. Goodbye!\n";
                 return 0;
             default:
-                cout << "\nInvalid choice! Please enter a number between 1 and 8.\n";
+                cout << "\nInvalid choice! Please enter a number between 1 and 15.\n";
                 break;
         }
 
