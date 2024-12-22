@@ -4,7 +4,8 @@
 #include <stack>
 #include <vector>
 #include <map>
-#include <algorithm> // For std::sort
+#include <cmath>
+#include <algorithm> 
 
 using namespace std;
 
@@ -107,6 +108,14 @@ void fromVector(const vector<Transaction>& transactions) {
 
 // Binary Search Tree for Account Management
 class BST {
+    private:
+    void destroyTree(Account* node) {
+        if (node != nullptr) {
+            destroyTree(node->left);
+            destroyTree(node->right);
+            delete node;
+        }
+    }
 public:
     Account* root;
 
@@ -145,14 +154,7 @@ public:
         destroyTree(root);
     }
 
-private:
-    void destroyTree(Account* node) {
-        if (node != nullptr) {
-            destroyTree(node->left);
-            destroyTree(node->right);
-            delete node;
-        }
-    }
+
 };
 
 // AVL Tree for VIP Accounts
@@ -765,5 +767,5 @@ int main()
         }
 
         cout << "-----------------------------------------\n";
-    }
+}
 }
