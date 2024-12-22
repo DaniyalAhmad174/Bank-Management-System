@@ -18,13 +18,6 @@ struct Transaction {
 
 // Struct for Accounts in BST 
 
-struct Account {
-    int accountNumber;
-    string name;
-    double balance;
-    Account* left;
-    Account* right;
-};
 
 void quickSort(vector<Transaction>& arr, int low, int high) {
     if (low < high) {
